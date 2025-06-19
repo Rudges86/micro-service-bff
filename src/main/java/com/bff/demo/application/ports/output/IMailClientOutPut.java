@@ -6,5 +6,5 @@ import org.springframework.http.ResponseEntity;
 
 public interface IMailClientOutPut {
 
-    ResponseEntity<ResponseDTO> sendMail(MailModel mail);
+    ResponseDTO sendMail(MailModel mail);
 }

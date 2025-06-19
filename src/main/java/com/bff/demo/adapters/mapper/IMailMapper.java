@@ -9,9 +9,6 @@ import org.springframework.http.ResponseEntity;
 
 @Mapper(componentModel = "spring")
 public interface IMailMapper {
-    IMailMapper INSTANCE = Mappers.getMapper(IMailMapper.class);
-
     MailModel mailMapper(MailSendDTO sendDTO);
 
-    ResponseDTO responseMapper(ResponseEntity<ResponseDTO> response);
 }

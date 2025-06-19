@@ -14,3 +14,9 @@ feign:
     url:  http://localhost:8080/apiemail
     send:
       path: /mailSender
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html

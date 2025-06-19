@@ -18,7 +18,7 @@ public class MailClientOutPutFeign implements IMailClientOutPut {
 
 
     @Override
-    public ResponseEntity<ResponseDTO> sendMail(MailModel mail) {
-        return client.sendMail(mail);
+    public ResponseDTO sendMail(MailModel mail) {
+        return client.sendMail(mail).getBody();
     }
 }

@@ -12,6 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.net.ConnectException;
+
 @RestControllerAdvice
 public class HandlerController {
     private static final Logger logger = LoggerFactory.getLogger(HandlerController.class);
@@ -26,5 +28,12 @@ public class HandlerController {
             return ResponseEntity.internalServerError().body(new ErroMessageDTO(HttpStatus.INTERNAL_SERVER_ERROR.name(),
                     "Erro ao processar o tratamento do erro"));
         }
+    }
+
+    @ExceptionHandler(ConnectException.class)
+    public ResponseEntity<ErroMessageDTO> connectionException(HttpServletRequest request, ConnectException ex) {
+        logger.error("Rota indisponível " + request.getRequestURI());
+        return ResponseEntity.badRequest().body(new ErroMessageDTO(HttpStatus.BAD_REQUEST.name(),
+                "Serviço indisponível"));
     }
 }
