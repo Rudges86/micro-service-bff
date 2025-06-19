@@ -19,7 +19,7 @@ A construção das validações no bff ainda serão feitas, a medida que forem s
 - Spring Cloud OpenFeign
 - Spring Validation
 - MapStruct
-- Swagger / Springdoc OpenAPI
+- Swagger / Springdoc OpenAPI version 2.8.6
 - JUnit + Mockito
 ---
 
