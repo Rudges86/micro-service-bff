@@ -16,34 +16,6 @@ A construção das validações no bff ainda serão feitas, a medida que forem s
 - JUnit + Mockito
 ---
 
-## 📁 Estrutura do Projeto
-src
-├── main
-│ ├── java
-│ │ └── com.bff.demo
-│ │   ├── DemoApplication.java
-│ │   ├── adapters
-│ │   │    ├── exception
-│ │   │    │ └── handle
-│ │   │    ├── input # Controllers
-│ │   │    │  ├── web
-│ │   │    │  └── dto
-│ │   │    ├── mapper # Interfaces do MapStruct
-│ │   │    └── output
-│ │   │     ├── dto
-│ │   │     └── feign # Feign clients
-│ │   ├── application # Regras de orquestração
-│ │   │   └── ports
-│ │   │       ├── input
-│ │   │       └── output
-│ │   ├── domain # Modelos de negócio (records, entidades)
-│ │   └── config # Configurações (Swagger, Feign, ExceptionHandler)
-│ └── resources
-│ └── application.yml
-
-
----
-
 ## ⚙️ Como executar localmente
 ### Pré-requisitos
 - Java 21
