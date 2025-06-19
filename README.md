@@ -1,4 +1,4 @@
-**#🧩 micro-service-bff versão 1.0.** 
+**#🧩 Micro-service-bff versão 1.0.** 
 
 
 Desenvolvimento de um bff para interagir com outros microsserviços nos repositórios.  
