@@ -1,7 +1,12 @@
-🧩 micro-service-bff versão 1.0.  
+#🧩 micro-service-bff versão 1.0.  
 Desenvolvimento de um bff para interagir com outros microsserviços nos repositórios.  
-Este projeto é um **Backend for Frontend (BFF)** construído com **Java 21 e Spring Boot 3**, responsável por receber requisições do frontend, validar e repassar  para outros microserviços, tratando os erros de forma apropriada e padronizada.  
-A construção das validações no bff ainda serão feitas, a medida que forem surgindo novos microsserviços, deixando assim o bff mais completo.  
+
+Este projeto é um **Backend for Frontend (BFF)** construído com **Java 21 e Spring Boot 3**, responsável por receber requisições do frontend, validar e repassar 
+
+para outros microserviços, tratando os erros de forma apropriada e padronizada.  
+
+A construção das validações no bff ainda serão feitas, a medida que forem surgindo novos microsserviços, deixando assim o bff mais completo.
+
 ---
 
 ## 🚀 Tecnologias utilizadas
