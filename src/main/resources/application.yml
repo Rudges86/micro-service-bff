@@ -1,0 +1,16 @@
+spring:
+  application:
+      name: bff
+
+server:
+    port: 8081
+    servlet:
+      contextPath: /bff
+feign:
+  httpclient:
+      enabled: true
+  mail:
+    name: mail
+    url:  http://localhost:8080/apiemail
+    send:
+      path: /mailSender
